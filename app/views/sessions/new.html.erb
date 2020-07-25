@@ -1,0 +1,15 @@
+<h1>Log in</h1>
+
+<%= form_for @user do |f| %>
+
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :password %><br>
+    <%= f.password_field :password %><br>
+
+    <%= f.submit "Sign in" %><br><br>
+    
+    Don't have an account? <%= link_to "Register", new_user_path %>
+
+<% end %>
